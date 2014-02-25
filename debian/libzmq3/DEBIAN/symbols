@@ -29,7 +29,7 @@ libzmq.so.3 libzmq3 #MINVER#
  zmq_msg_size@Base 3.2.3+dfsg
  zmq_poll@Base 3.2.3+dfsg
  zmq_proxy@Base 3.2.3+dfsg
- zmq_proxy_steerable@Base 4.0.3+dfsg-1
+ zmq_proxy_steerable@Base 4.1.0+dfsg-1
  zmq_recv@Base 3.2.3+dfsg
  zmq_recviov@Base 3.2.3+dfsg
  zmq_recvmsg@Base 3.2.3+dfsg
