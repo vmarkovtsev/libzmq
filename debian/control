@@ -5,6 +5,7 @@ Maintainer: Alessandro Ghedini <ghedo@debian.org>
 Build-Depends: debhelper (>= 9),
  dh-autoreconf,
  libpgm-dev,
+ libsodium-dev,
  pkg-config
 Standards-Version: 3.9.5
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/zeromq3.git

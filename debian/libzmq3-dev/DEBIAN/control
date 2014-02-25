@@ -3,7 +3,7 @@ Source: zeromq3
 Version: 4.1.0+dfsg-1
 Architecture: amd64
 Maintainer: Alessandro Ghedini <ghedo@debian.org>
-Installed-Size: 1245
+Installed-Size: 1291
 Depends: libzmq3 (= 4.1.0+dfsg-1)
 Conflicts: libzmq-dev
 Section: libdevel

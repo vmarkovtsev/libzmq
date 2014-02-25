@@ -3,9 +3,9 @@ Source: zeromq3
 Version: 4.1.0+dfsg-1
 Architecture: amd64
 Maintainer: Alessandro Ghedini <ghedo@debian.org>
-Installed-Size: 429
+Installed-Size: 449
 Pre-Depends: multiarch-support
-Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libpgm-5.1-0 (>= 5.1.116~dfsg), libstdc++6 (>= 4.2.1)
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libpgm-5.1-0 (>= 5.1.116~dfsg), libsodium4, libstdc++6 (>= 4.2.1)
 Section: libs
 Priority: optional
 Multi-Arch: same
