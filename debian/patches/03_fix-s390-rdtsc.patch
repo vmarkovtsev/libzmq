@@ -1,0 +1,18 @@
+Description: Fix timestamp counter on s390(x)
+Origin: vendor
+Bug: https://github.com/zeromq/libzmq/issues/811
+Bug-Debian: http://bugs.debian.org/734521
+Forwarded: https://github.com/zeromq/libzmq/pull/818
+Author: Alessandro Ghedini <ghedo@debian.org>
+Last-Update: 2014-01-12
+
+--- a/src/clock.cpp
++++ b/src/clock.cpp
+@@ -139,7 +139,6 @@
+ #elif defined(__s390__)
+     uint64_t tsc;
+     asm("\tstck\t%0\n" : "=Q" (tsc) : : "cc");
+-    tsc >>= 12;		/* convert to microseconds just to be consistent */
+     return(tsc);
+ #else
+     return 0;

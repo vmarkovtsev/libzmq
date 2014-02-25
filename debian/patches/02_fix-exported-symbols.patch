@@ -1,0 +1,25 @@
+Description: Only export zmq_* symbols
+Origin: vendor
+Bug-Debian: http://bugs.debian.org/732654
+Forwarded: https://github.com/zeromq/libzmq/pull/817
+Author: Alessandro Ghedini <ghedo@debian.org>
+Last-Update: 2013-12-20
+
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -154,7 +154,7 @@
+ if ON_ANDROID
+ libzmq_la_LDFLAGS = -avoid-version -version-info @LTVER@ @LIBZMQ_EXTRA_LDFLAGS@
+ else
+-libzmq_la_LDFLAGS = -version-info @LTVER@ @LIBZMQ_EXTRA_LDFLAGS@
++libzmq_la_LDFLAGS = -version-info @LTVER@ @LIBZMQ_EXTRA_LDFLAGS@ -Wl,--version-script=libzmq.vers
+ endif
+ endif
+ 
+--- /dev/null
++++ b/src/libzmq.vers
+@@ -0,0 +1,4 @@
++{
++  global: zmq_*;
++  local: *;
++};
