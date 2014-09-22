@@ -19,3 +19,7 @@ endif
 
 override_dh_strip:
 	dh_strip --dbg-package=libzmq3-dbg
+
+override_dh_install:
+	dh_install
+	cd debian/libzmq3/usr/lib/x86_64-linux-gnu && ln -s libzmq.so.4 libzmq.so.3
