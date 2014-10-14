@@ -1,7 +1,0 @@
-5d209f8662ed8cbba8955001b5b6aff5  usr/include/zmq.h
-388ddb07fdd88b040769e8f4c9b397fa  usr/include/zmq.hpp
-598d4f8e0fb10589e703742901100f36  usr/include/zmq_utils.h
-222efd07b75a69fa83a3f87f535a517e  usr/lib/x86_64-linux-gnu/libzmq.a
-d30631bfa0bf54473d414423c8542f84  usr/lib/x86_64-linux-gnu/pkgconfig/libzmq.pc
-75073b972c91377b7a8aac665bbee35e  usr/share/doc/libzmq3-dev/changelog.Debian.gz
-5cd0b76fc6618011ca1e8ca120c35d15  usr/share/doc/libzmq3-dev/copyright
